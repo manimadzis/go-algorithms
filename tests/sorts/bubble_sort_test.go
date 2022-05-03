@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"sort"
 	"testing"
+
+	"github.com/manimadzis/go-algorithms/sorts"
 )
 
 type MyInts struct {
@@ -31,10 +33,10 @@ func TestBubbleSort(t *testing.T) {
 		array: []int{5, 4, 3, 2, 1},
 	}
 
-	BubbleSort(&a)
+	sorts.BubbleSort(&a)
 
-	fmt.Print(a)
+	fmt.Println(a)
 
 	sort.Sort(&b)
-	fmt.Print(b)
+	fmt.Println(b)
 }
